@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfile.serve
     container_name: serve
     ports:
-      - "3011"
+      - "3011:3011"
     restart: unless-stopped
     volumes:
       - ./data:/app/data
